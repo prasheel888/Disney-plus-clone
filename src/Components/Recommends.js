@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectNewDisney } from "../features/movie/movieSlice";
+import { selectNewDisney, selectRecommend } from "../features/movie/movieSlice";
 
 const Recommends = (props) => {
-  const movies = useSelector(selectNewDisney);
+  const movies = useSelector(selectRecommend);
   console.log(movies);
   return (
     <Container>
